@@ -1,0 +1,11 @@
+1.- Agregar columna Fecha_Creacion tipo date a la tabla fichas y planeacion
+
+
+
+Pendientes
+
+
+Menu de Configuracion  para dar por finalizado Cursos 
+Tomar configuracion de lugares desde la tabla en las revisiones de grado
+Editar Escuelas
+
