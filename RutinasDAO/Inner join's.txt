@@ -1,0 +1,17 @@
+
+/*Traer usuarios con datos convertidos*/
+
+SELECT u.*, es.descripcion as Escuela, g.Descripcion as Grado_Terminado,t.descripcion as Horario FROM `usuarios` u
+inner join ficha f on u.id_usuario=f.id_usuario
+inner join escuelas es on f.id_escuela=es.id_escuela
+inner join grados g on f.id_grado=g.Grado
+inner join turnos t on f.id_horario=t.id_turno
+
+
+
+select pnl.Nombre as Persona, sem.Descripcion as Semana, gra.descripcion as Grado, tur.descripcion as Turno 
+from planeacion p
+inner join personal pnl on p.id_persona= pnl.id
+inner join semanas sem on p.id_semana=sem.id_semana
+inner join grados gra on p.id_grado=gra.id_grado
+inner join turnos tur on p.id_turno=tur.id_turno
